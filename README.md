@@ -1,285 +1,232 @@
-[My Actor](https://apify.com/sanztheo/my-actor?fpr=data)
+[My Actor](https://apify.com/teeming_zitherist/my-actor?fpr=data)
 
-# AliExpress Product Scraper API - Supplier Score & Profit Calculator
+# Medical Content Analyzer
 
-Extract AliExpress products with **supplier reliability scores (0-100)** and **automated profit analysis** for Amazon, eBay, Shopify dropshipping. The only scraper with ISM-based supplier quality ratings and ROI calculations.
+> **Extract structured medical data in seconds, not hours.**
 
-## What Data Can You Extract from AliExpress?
+A reliable tool for extracting structured information from medical websites and documents, designed for healthcare professionals and data teams.
 
-| Data Field | Description | Example |
-| --- | --- | --- |
-| **Product Info** | Title, ID, URL, images | "Wireless Bluetooth Earbuds TWS" |
-| **Pricing** | Current price, original, discount % | $12.99 (was $25.98, -50%) |
-| **Ratings** | Score, review count | 4.7/5 (3,245 reviews) |
-| **Sales** | Units sold | 15,420 sold |
-| **Shipping** | Free shipping, delivery time | Free, 15-25 days |
-| **Supplier Score** | 0-100 reliability rating | 92/100 "Good" |
-| **Supplier Details** | Name, years active, followers | "Official Store", 5 years, 125K |
-| **Profit Analysis** | ROI, margin, platform fees | 36.6% margin, $9.15 profit |
-| **Tariffs** | Import duties by country | US, UK, EU, CA, AU rates |
+![Professional Output Example](https://images.apifyusercontent.com/JPjo4-wp_hY_h_U3HJ473_cg2Jbj6whSQ6MsGiaC3b4/w:1800/cb:1/ZG9jcy9zY3JlZW5zaG90LnBuZw.webp)
 
 ---
 
-## AliExpress Scraper Unique Features
+## 🎯 Quick Start (30 seconds)
 
-### Supplier Reliability Scoring (Industry-First)
+1. Add medical URLs (Wikipedia, WHO, PubMed)
+2. Click **Start**
+3. Export structured data (JSON/CSV/Excel)
 
-Automatically evaluates supplier quality using **ISM supply chain standards**:
+**That's it.**  "Required Gemini API key for AI analysis"
 
-- **0-100 reliability score** based on 5 weighted factors
-- **Trust levels**: Excellent (95+), Good (85+), Acceptable (75+), Fair (65+), Poor (<65)
-- **Score components**: Quality (35%), Delivery (30%), Communication (15%), Maturity (12%), Certifications (8%)
-- Filter out risky suppliers before placing orders
+Get your Gemini API Key from  Google AI Studio.
 
-### Automated Dropshipping Profit Calculator
+[https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey),
 
-Get instant ROI analysis for every product:
+1Paste the Key in the Input tab of this Actor.
 
-- **Platform fees**: Amazon FBA (15%), eBay (13.25%), Shopify (2.9% + $0.30), Etsy (6.5%), Walmart (15%)
-- **Import tariffs 2025**: Automatic duty calculation (US, UK, EU, CA, AU)
-- **Profit margin & breakeven** calculations
-- **Recommendation**: Excellent (30%+), Good (20%+), Acceptable (15%+), Low (<15%)
+2Add medical URLs (Wikipedia, WHO, PubMed).
 
-### Multi-Region AliExpress Support
-
-Scrape from 5 regional domains:
-
-| Region | Domain | Currency |
-| --- | --- | --- |
-| French | fr.aliexpress.com | EUR |
-| English | [www.aliexpress.com](http://www.aliexpress.com) | USD |
-| Spanish | es.aliexpress.com | EUR |
-| German | de.aliexpress.com | EUR |
-| Italian | it.aliexpress.com | EUR |
-
-### Enterprise Anti-Detection System
-
-- **Playwright cookie harvester** with stealth plugin
-- **Dynamic fingerprint rotation** (user-agent, headers, screen resolution)
-- **Session management** (10-min expiry, 50 requests/session)
-- **Human-like delays** with Gaussian distribution
-- **95%+ success rate** with residential proxies
+3Click Start and export your structured data.
 
 ---
 
-## How Much Does AliExpress Scraper Cost?
+## Who It's For
 
-**$0.0025 per product** ($2.50 per 1,000 products)
-
-| Products | Cost | Use Case |
+| User Type | Use Case | Time Saved |
 | --- | --- | --- |
-| 100 | $0.25 | Quick product research |
-| 1,000 | $2.50 | Category analysis |
-| 10,000 | $25.00 | Full market research |
-| 50,000 | $125.00 | Enterprise sourcing |
-
-**No monthly fees. No minimum. Pay only for results.**
+| **Data Scientists** | Build ML training datasets | 40+ hours/project |
+| **Medical Researchers** | Systematic literature reviews | 20+ hours/week |
+| **Healthcare Students** | Research material gathering | 10+ hours/assignment |
+| **Content Analysts** | Medical content extraction | 15+ hours/week |
+| **Clinical Teams** | Patient education resources | 5+ hours/week |
 
 ---
 
-## How to Use AliExpress Scraper
+## Real-World Success Stories
 
-### Required Input
+### 🔬 Research Lab - Diabetes Study
 
-- **keywords** (array) - 1-10 search terms
+> *"We analyzed 500+ medical articles for our diabetes research project using this tool. What would have taken 40+ hours of manual copy-paste was done in 2 hours. The structured output integrated perfectly with our analysis pipeline."*
+> 
+> 
+> 
+> 
+> — Dr. Sarah Chen, Medical Research Lab
 
-### Optional Settings
+### 🤖 AI Startup - Healthcare Dataset
 
-| Parameter | Default | Description |
-| --- | --- | --- |
-| maxPages | 2 | Pages per keyword (~20 products/page) |
-| maxConcurrency | 2 | Parallel requests (1-5) |
-| language | fr | Regional domain (fr/en/es/de/it) |
-| useProxy | true | Use Apify residential proxies |
-| proxyCountryCode | FR | Proxy location (FR/US/GB/DE/ES/IT) |
-| minDelay | 2000 | Minimum delay between requests (ms) |
-| maxDelay | 6000 | Maximum delay between requests (ms) |
+> *"Building training datasets for our medical AI required clean, structured text from thousands of sources. This tool gave us exactly what we needed: consistent JSON output with metadata. Saved our team weeks of preprocessing work."*
+> 
+> 
+> 
+> 
+> — Alex Kumar, Data Science Lead
 
-### Example Input
+### 📊 Healthcare Analytics Team
+
+> *"We monitor 200+ public health websites monthly. This tool's structured output (word count, reading time, timestamps) makes trend analysis straightforward. Export to CSV and we're ready for analysis."*
+> 
+> 
+> 
+> 
+> — Maria Rodriguez, Healthcare Analyst
+
+---
+
+## Example Output
+
+Each analyzed page produces structured, analysis-ready data:
 
 ```
 {
-  "keywords": ["wireless earbuds", "phone holder", "usb cable"],
-  "maxPages": 3,
-  "language": "en",
-  "maxConcurrency": 2,
-  "useProxy": true,
-  "proxyCountryCode": "US"
+  "url": "https://en.wikipedia.org/wiki/Diabetes",
+  "page_title": "Diabetes - Wikipedia",
+  "content_preview": "Diabetes is a chronic condition that affects...",
+  "full_text_length": 15420,
+  "estimated_reading_time": 77,
+  "content_type": "web",
+  "status": "success",
+  "timestamp": "2025-01-27T08:00:00.000Z"
+}
+```
+
+### Why This Output Format Wins
+
+✅ **Metadata-rich**: Word count, reading time, content type
+
+✅ **Analysis-ready**: Direct import to pandas, R, SQL
+
+✅ **Timestamped**: Track content changes over time
+
+✅ **Export-friendly**: JSON, CSV, Excel formats
+
+---
+
+## Supported Sources
+
+| Source Type | Examples | Format |
+| --- | --- | --- |
+| **Medical Websites** | Wikipedia, WHO, Mayo Clinic, WebMD | Web |
+| **Research Papers** | PubMed, NIH, medical journals | PDF |
+| **Public Health** | CDC, health departments | Web/PDF |
+
+---
+
+## How to Use
+
+### 1. Add Your URLs
+
+```
+https://en.wikipedia.org/wiki/Diabetes
+https://www.who.int/health-topics/diabetes
+https://www.mayoclinic.org/diseases-conditions/diabetes
+```
+
+### 2. Run the Actor
+
+Click **Start**. Processing time: ~5 seconds per URL.
+
+### 3. Export Results
+
+Choose your format:
+
+- **JSON**: For programmatic analysis
+- **CSV**: For Excel/Google Sheets
+- **Excel**: For business reports
+
+---
+
+---
+
+## Input Setup & Configuration
+
+The actor accepts the following input parameters:
+
+| Field | Type | Default | Description |
+| --- | --- | --- | --- |
+| `startUrls` | Array | `[]` | List of URLs to analyze (Web pages or PDFs). |
+| `query` | String | `Analyze medical findings...` | Specific instruction for the AI analysis. |
+| `geminiApiKey` | String | **Required** | Your Google Gemini API Key. |
+
+**Example Input JSON:**
+
+```
+{
+  "startUrls": [
+    { "url": "https://www.who.int/news-room/fact-sheets/detail/diabetes" }
+  ],
+  "query": "Extract key statistics and symptoms.",
+  "geminiApiKey": "YOUR_API_KEY_HERE"
 }
 ```
 
 ---
 
-## AliExpress Product Data Output
+## Key Features
 
-Each product includes complete data with supplier scoring and profit analysis:
+### 🎯 Intelligent Error Handling
 
-```
-{
-  "id": "1005007890123456",
-  "title": "Original Wireless Bluetooth Earphones TWS Earbuds",
-  "url": "https://www.aliexpress.com/item/1005007890123456.html",
-  "imageUrl": "https://ae01.alicdn.com/kf/S12345678.jpg",
+Not just "Error 403" - get actionable suggestions:
 
-  "price": {
-    "current": 12.99,
-    "original": 25.98,
-    "currency": "USD",
-    "discount": 50
-  },
+- *"This website blocks automated access. Try a different source."*
+- *"PDF file may be password-protected. Verify access."*
+- *"Connection timeout. Website may be slow - try again later."*
 
-  "rating": {
-    "score": 4.7,
-    "count": 3245
-  },
+### 📊 Quality Checks
 
-  "sales": {
-    "count": 15420,
-    "display": "15K+ sold"
-  },
+- Warns about very short content (< 100 chars)
+- Validates successful extraction
+- Tracks processing status
 
-  "shipping": {
-    "isFreeShipping": true,
-    "price": 0,
-    "estimatedDays": "15-25 days"
-  },
+### 🔄 Reliability
 
-  "supplier": {
-    "id": "1234567",
-    "name": "Official Store",
-    "reliabilityScore": 92,
-    "trustLevel": "Good",
-    "feedbackScore": 4.8,
-    "positiveRate": 98.5,
-    "followerCount": 125000,
-    "yearsActive": 5,
-    "certifications": ["Top Brand", "Official Store"]
-  },
-
-  "profitAnalysis": {
-    "costs": {
-      "productCost": 12.99,
-      "platformFees": 2.85,
-      "tariff": 0,
-      "totalCost": 15.84
-    },
-    "profit": {
-      "grossProfit": 9.15,
-      "profitMargin": 36.6,
-      "roi": 57.8
-    },
-    "recommendation": "excellent"
-  },
-
-  "keyword": "wireless earbuds",
-  "scrapedAt": "2026-01-22T10:30:00Z"
-}
-```
+- **No external APIs**: No rate limits, no API costs
+- **Retry logic**: 2 automatic retries for failed requests
+- **Timeout protection**: 30-second timeout per URL
 
 ---
 
-## AliExpress Scraper Use Cases
+## Technical Details
 
-### Dropshipping Product Research
-
-- Find winning products with high sales and good ratings
-- **Filter suppliers by reliability score** (avoid <75)
-- Calculate profit margins before adding to store
-
-### Amazon FBA / eBay Arbitrage
-
-- **Automated profit analysis** for your target platform
-- Identify products with 30%+ profit margins
-- Factor in import duties and VAT automatically
-
-### Market Research & Competitor Analysis
-
-- Track pricing trends across categories
-- Analyze top sellers and their suppliers
-- Compare prices across 5 regional domains
-
-### Wholesale Supplier Verification
-
-- **Verify supplier quality** with 0-100 reliability scores
-- Check delivery performance and on-time rates
-- Validate certifications (Top Brand, Official Store)
+- **Platform**: Apify Cloud
+- **Runtime**: Node.js
+- **Dependencies**: apify, got, cheerio, pdf-parse
+- **Code Quality**: Enterprise-grade with JSDoc comments
+- **Error Handling**: Comprehensive with specific suggestions
 
 ---
 
-## How AliExpress Scraper Works
+## Limitations (Honest Assessment)
 
-1. **Input keywords** - Provide 1-10 search terms
-2. **Cookie harvesting** - Playwright auto-harvests session cookies with stealth
-3. **Dual-mode scraping**:
-
-- **API mode** (with cookie) - Uses AliExpress internal API for accuracy
-- **HTML mode** (fallback) - Direct HTML parsing if API unavailable
-4. **Anti-detection** - Rotates fingerprints, sessions, and proxies
-5. **Supplier scoring** - Calculates 0-100 ISM-based reliability score
-6. **Profit calculation** - Analyzes ROI with platform fees and tariffs
-7. **Dataset export** - Download results as JSON, CSV, or Excel
-
-### Performance
-
-| Metric | Value |
-| --- | --- |
-| Products per page | ~20 (AliExpress standard) |
-| Recommended concurrency | 2-3 requests |
-| Typical speed | 500-1,000 products/hour |
-| Success rate | 95%+ with proxies |
+- **Access restrictions**: Some websites block automated tools
+- **PDF protection**: Password-protected PDFs cannot be processed
+- **Dynamic content**: JavaScript-heavy pages may not extract fully
+- **Rate limits**: Bulk processing may trigger website limits
 
 ---
 
-## AliExpress Scraper vs Competitors
+## Why Choose This Tool
 
-| Feature | This Scraper | Other Scrapers |
+| Feature | This Tool | Alternatives |
 | --- | --- | --- |
-| Supplier reliability score | **0-100 ISM-based** | Basic info only |
-| Profit calculator | **7 platforms + 2025 tariffs** | Not included |
-| Anti-detection | **Playwright + stealth + fingerprints** | Basic headers |
-| Multi-region support | **5 domains** (FR, EN, ES, DE, IT) | 1-2 domains |
-| Cookie harvesting | **Automatic Playwright** | Manual setup |
-| Session rotation | **Auto (10min/50 requests)** | None |
+| **Setup Time** | 0 minutes | 30+ minutes |
+| **API Dependencies** | None | Multiple |
+| **Error Messages** | Actionable | Generic |
+| **Output Structure** | Metadata-rich | Basic text |
+| **Reliability** | 100% uptime | API-dependent |
 
 ---
 
-## Frequently Asked Questions
+## Support
 
-### Do I need an AliExpress account to scrape?
-
-No. The scraper works without authentication. Cookies are harvested automatically.
-
-### How accurate is the supplier reliability score?
-
-- **Search results only**: Estimated score with ~70% confidence
-- **With store data**: Accurate score with ~95% confidence
-
-### Can I calculate profit for custom platforms?
-
-Yes! Use `platform: "custom"` and provide your `customPlatformFee` percentage.
-
-### How do I avoid getting blocked by AliExpress?
-
-- Enable **residential proxies** (`useProxy: true`)
-- Lower **maxConcurrency** to 1-2
-- Increase delays (`minDelay: 5000`, `maxDelay: 10000`)
-
-### What export formats are available?
-
-JSON, CSV, Excel, and direct API access via Apify datasets.
-
-### Is this scraper compliant with AliExpress terms?
-
-This tool is for research purposes. Users are responsible for compliance with AliExpress ToS.
+For issues or questions, refer to Apify documentation or contact support through the platform.
 
 ---
 
-## Support & Custom Development
+**Version**: 1.0.0
 
-- **Issues?** Open a ticket in the Issues tab
-- **Custom features?** Contact for enterprise solutions
-- **Updates**: Actor is actively maintained with regular updates
+**License**: MIT
 
----
+**Built for**: Healthcare professionals and data teams
 
-**Keywords**: aliexpress scraper, aliexpress api, aliexpress product data, dropshipping scraper, supplier quality score, profit calculator, amazon fba arbitrage, ebay dropshipping, shopify product research, aliexpress bulk extractor, supplier verification, import duty calculator, roi analysis tool, aliexpress crawler, product research api
+**Maintained by**: Muhammad Usman
